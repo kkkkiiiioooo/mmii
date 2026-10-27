@@ -1,0 +1,69 @@
+# DÚVIDAS EM ABERTO
+
+## Como Usar Este Arquivo
+Este arquivo registra **todas as dúvidas técnicas** que surgem durante o processo de resolução.
+
+**Formato para cada dúvida:**
+```markdown
+## [ID] - [Título da Dúvida]
+- **Data:** AAAA-MM-DD
+- **Agente:** [Nome do agente que levantou a dúvida]
+- **Categoria:** [Técnica/Hardware/Software/Procedimento]
+- **Descrição:** [Dúvida detalhada]
+- **Contexto:** [Em qual alternativa/etapa a dúvida surgiu]
+- **Status:** 🔍 Em aberto | ✅ Respondido | ❌ Inválido
+- **Resposta:** [Resposta do criador ou outro agente]
+- **Respondido por:** [Nome de quem respondeu]
+- **Data da resposta:** [AAAA-MM-DD]
+- **Arquivos relacionados:** [Links para STATE.md, PLAN.md, etc.]
+```
+
+---
+
+## Dúvidas em Aberto
+*(Nenhuma no momento - adicione conforme dúvidas surgirem)*
+
+---
+
+## Dúvidas Respondidas
+*(Nenhuma no momento - serão movidas aqui quando respondidas)*
+
+---
+
+## Categorias de Dúvidas
+
+### 🔧 Técnicas
+- Dúvidas sobre comandos, ferramentas ou procedimentos técnicos
+
+### 🖥️ Hardware
+- Dúvidas sobre compatibilidade, drivers ou dispositivos
+
+### 💻 Software
+- Dúvidas sobre o Windows, WinRE ou sistemas operacionais
+
+### 📋 Procedimento
+- Dúvidas sobre o fluxo de trabalho ou como proceder
+
+---
+
+## Instruções para Agentes
+
+1. **Antes de adicionar uma dúvida:**
+   - Verifique se já existe uma dúvida semelhante
+   - Verifique se a resposta já está em DECISIONS.md
+   - Verifique se a informação já está em CONFIG.md
+
+2. **Ao adicionar uma dúvida:**
+   - Use o formato padrão
+   - Seja específico e detalhado
+   - Inclua o contexto (em qual alternativa você está trabalhando)
+
+3. **Ao responder uma dúvida:**
+   - Adicione a resposta no campo "Resposta"
+   - Mude o status para ✅ Respondido
+   - Inclua seu nome e a data
+   - Se a resposta resolver um bloqueio, atualize STATE.md
+
+4. **Se uma dúvida for inválida:**
+   - Mude o status para ❌ Inválido
+   - Explique por que é inválida
