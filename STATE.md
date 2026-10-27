@@ -17,11 +17,11 @@
 - **Dependências:** Acesso ao arquivo .inf
 
 ### 🟡 A2: Conexão Bluetooth PAN com celular
-- **Status:** Em andamento
+- **Status:** Bloqueado - Aguardando resposta
 - **Responsável:** Agente-Opencode
-- **Última ação:** Iniciando análise de viabilidade do Bluetooth PAN no WinRE 1809
-- **Próximos passos:** Investigar suporte nativo a Bluetooth PAN/Profile NAP no Windows Recovery Environment 1809
-- **Dependências:** Celular com suporte a Bluetooth PAN
+- **Última ação:** Adicionada dúvida OQ001 sobre suporte nativo a Bluetooth PAN no WinRE 1809
+- **Próximos passos:** Aguardar resposta do criador sobre viabilidade do Bluetooth PAN; caso negativo, passar para A1
+- **Dependências:** Resposta sobre suporte PAN no WinRE 1809
 
 ### 🟡 A3: Redefinição do PC com download na nuvem
 - **Status:** Não iniciado
@@ -51,6 +51,7 @@
 | Data/Hora | Agente | Ação | Resultado | Arquivo Atualizado |
 |-----------|--------|------|-----------|-------------------|
 | 2026-10-27 07:04 | Agente-Opencode | Início da análise do desafio | Em andamento | STATE.md |
+| 2026-10-27 07:04 | Agente-Opencode | Adicionada dúvida sobre Bluetooth PAN no WinRE 1809 | Bloqueado - Aguardando resposta | OPEN_QUESTIONS.md, STATE.md |
 
 ---
 
