@@ -86,5 +86,16 @@ So finalize quando ocorrer um destes casos:
 - Pesquise de forma exaustiva (documentacao oficial Microsoft Learn, foruns, casos reais) antes de concluir que algo nao e possivel; registre as fontes.
 - Explore alem do caminho principal: teste alternativas e registre os resultados, mesmo negativos. Evidencia negativa tambem e evidencia.
 
+## Contrato planner-executor (comunicacao via documentos)
+Fluxo: o agente/modelo mais capaz PLANEJA; o mais limitado EXECUTA. Nao precisam estar na mesma conversa: conversam pelo repositorio.
+
+- **Sequencia obrigatoria ao entrar:** leia AGENTS.md -> STATE.md -> o handoff no fim do STATE.md -> os planos citados.
+- **PLAN-MAIN.md** e **planos auxiliares**: escritos e editados SO pelo planejador. O executor nunca edita planos.
+- **STATE.md**: snapshot do progresso; ultima secao obrigatoriamente `## Proximo passo (handoff)`, com instrucao imperativa ao proximo agente: o que executar, onde registrar a saida e o que fazer em caso de falha.
+- **data.txt / evidencias**: so o executor escreve (comandos e saidas reais).
+- **BLOCKED.md**: so o executor escreve, quando um passo falha (ver modelo em base/BLOCKED.md). Nunca apagar entradas.
+- **Regra de replanejamento:** apos registrar falha em BLOCKED.md, o executor PARA e atualiza o STATE.md com um resultado para o planejador. Replan e feito pelo planejador lendo STATE.md + BLOCKED.md + data.txt, que entao reescreve os planos e emite novo handoff.
+- **Status de fase:** pendente | em execucao | concluida | falhou (atualize no STATE.md).
+
 ## Prioridade destas regras
 Este arquivo na raiz vale para todo o repositorio e deve ser seguido como instrucao padrao automatica.
