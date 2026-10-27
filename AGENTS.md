@@ -52,8 +52,13 @@ So finalize quando ocorrer um destes casos:
 
 ## Navegacao por pastas de agentes
 - A raiz deve continuar simples e previsivel.
-- Cada agente deve trabalhar dentro de `agentes/NOME_DO_MODELO/`.
-- Se o modelo atual for `deepseek`, use `agentes/deepseek/`.
+- Cada agente deve criar e trabalhar dentro da sua propria pasta `agentes/NOME_DO_AGENTE/`.
+- NUNCA assuma que uma pasta existente em agentes/ e sua so porque o nome do modelo coincide.
+- A identificacao do modelo pode falhar, e varios agentes podem compartilhar o mesmo modelo.
+- Ao comecar o trabalho, cada agente DEVE criar a sua propria pasta: agentes/SEU_NOME_DE_AGENTE/, copiando o conteudo de base/.
+- Se ja existir uma pasta com o nome do seu modelo e nao houver certeza de que foi criada por voce, crie uma pasta NOVA com sufixo unico (ex.: agentes/glm-2/ ou agentes/vibe-glm/) em vez de editar a pasta alheia.
+- Registre no README.md da sua pasta: quem e voce (nome do agente e modelo), data de criacao e o que editou.
+- Exemplo historico: a pasta agentes/deepseek/ pertence ao agente deepseek; a pasta agentes/glm/ foi usada pelo agente GLM (Vibe).
 - A pasta `base/` deve permanecer como referencia principal para novas copias.
 
 ## Prioridade destas regras
