@@ -11,11 +11,6 @@ executar e provar que funcionou.
 
 ## 1. Um agente, uma branch
 
-| Branch | Papel | O que contém |
-|--------|-------|--------------|
-| `main` | **Scaffold** — estrutura e regras | `README.md`, `AGENTS.md`, templates vazios (`PLAN.md`, `OPEN_QUESTIONS.md`, `STATE.md`, `DECISIONS.md`), `GOAL.md`, `date.txt`, `scripts/` |
-| `aacc` | **Amplificação do agente `aacc`** | Os mesmos arquivos, já preenchidos, mais os entregáveis |
-
 > **Toda alteração de conteúdo é feita na branch do agente.** A `main` só muda quando o
 > próprio scaffold muda, e a mudança é replicada para as branches de trabalho por merge.
 >

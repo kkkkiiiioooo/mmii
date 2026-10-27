@@ -73,3 +73,4 @@ Regras que fazem o cold start funcionar:
 2. `STATE.md` fecha cada sessão com próximo passo executável.
 3. Nada de "combinamos no chat" — se não está escrito, não existe para o próximo agente.
 4. `GOAL.md` é imutável durante o trabalho; mudança de objetivo é decisão registrada.
+5. Se o usuario nao especificar a branch ou qual agente esta usando, pergunte isso antes de executar qualquer acao.
