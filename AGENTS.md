@@ -75,9 +75,11 @@ So finalize quando ocorrer um destes casos:
 ## Contrato planner-executor (comunicacao via documentos)
 Fluxo: o agente/modelo mais capaz PLANEJA; o mais limitado EXECUTA. Nao precisam estar na mesma conversa: conversam pelo repositorio.
 
-- **Sequencia obrigatoria ao entrar:** leia AGENTS.md -> STATE.md -> o handoff no fim do STATE.md -> os planos citados.
+- **Sequencia obrigatoria ao entrar:** leia AGENTS.md -> MEMORY.md -> STATE.md -> o handoff no fim do STATE.md -> os planos citados.
 - **PLAN-MAIN.md** e **planos auxiliares**: escritos e editados SO pelo planejador. O executor nunca edita planos.
 - **STATE.md**: snapshot do progresso; ultima secao obrigatoriamente `## Proximo passo (handoff)`, com instrucao imperativa ao proximo agente: o que executar, onde registrar a saida e o que fazer em caso de falha.
+- **MEMORY.md**: registrar descobertas reutilizaveis, com no maximo 500 caracteres por entrada e sem duplicacao; atualizar a entrada existente quando houver sobreposicao.
+- **REPLAN_NOTES.md**: o executor registra fatos, bloqueios, evidencias, tentativas e recomendacao objetiva quando o planejador precisar replanejar.
 - **data.txt / evidencias**: so o executor escreve (comandos e saidas reais).
 - **BLOCKED.md**: so o executor escreve, quando um passo falha (ver modelo em base/BLOCKED.md). Nunca apagar entradas.
 - **Regra de replanejamento:** apos registrar falha em BLOCKED.md, o executor PARA e atualiza o STATE.md com um resultado para o planejador. Replan e feito pelo planejador lendo STATE.md + BLOCKED.md + data.txt, que entao reescreve os planos e emite novo handoff.

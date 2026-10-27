@@ -16,3 +16,7 @@ Regras:
 Pastas conhecidas:
 - base/ = referencia base do projeto; nao editar
 - agentes/ = escopo isolado por agente; acessar outra pasta so com instrucao explicita do usuario
+
+Documentos operacionais:
+- MEMORY.md = memoria compartilhada entre agentes; cada entrada com no maximo 500 caracteres; nao duplicar; atualizar a entrada existente quando houver sobreposicao
+- REPLAN_NOTES.md = anotacoes do executor para o planejador replanejar; registrar contexto, bloqueio, evidencias, tentativas, impacto e sugestao objetiva de ajuste
