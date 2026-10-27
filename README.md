@@ -35,7 +35,7 @@ solta de chat.
 | `AGENTS.md` | Contrato dos agentes: branch por agente, escopo, commits, encerramento. | Preenchido |
 | `GOAL.md` | O objetivo, o contexto e os requisitos. Entrada de tudo. | Preenchido |
 | `PLAN.md` | Como executar: fases, passos, riscos, critérios de verificação. | **Vazio** — só instruções |
-| `OPEN_QUESTIONS.md` | Perguntas ao chefe/cliente, com nível de criticidade e padrão caso não sejam respondidas. | **Vazio** — só instruções |
+| `OPEN_QUESTIONS.md` | Perguntas ao chefe/cliente: nível de criticidade, motivo, e padrão caso não sejam respondidas. | **Vazio** — só instruções |
 | `STATE.md` | Foto do estado atual: pronto, em andamento, próximo passo, bloqueios. | **Vazio** — só instruções |
 | `DECISIONS.md` | Registro de decisões (ADR): o que foi decidido, por quê, o que foi descartado. | **Vazio** — só instruções |
 | `date.txt` | Heartbeat do repositório. | Preenchido |
@@ -52,6 +52,20 @@ arquivo e preenche.
 - **`STATE.md`** contexto de conversa morre; sem ele o próximo agente refaz o que já foi feito.
 - **`DECISIONS.md`** sem ele a mesma discussão volta a cada sessão e a decisão é revertida
   por quem não sabia que ela existia.
+
+### Sessão nova, sem histórico
+
+O repositório é a fonte da verdade — a conversa não. Para começar do zero, a primeira
+mensagem é sempre a mesma:
+
+```
+Leia AGENTS.md, README.md, GOAL.md, STATE.md, PLAN.md, OPEN_QUESTIONS.md e DECISIONS.md
+nesta ordem. Depois responda em 5 linhas: onde o trabalho parou, qual é o próximo passo,
+o que está bloqueado. Não execute nada antes disso.
+```
+
+Se o agente não souber responder, falta arquivo — não falta conversa.
+Detalhes e regras de cooperação entre agentes em [AGENTS.md](AGENTS.md) §8 e §9.
 
 ---
 

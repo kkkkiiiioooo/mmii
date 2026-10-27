@@ -27,7 +27,13 @@ COMO PREENCHER
   2. Uma pergunta por linha, fechada (sim/não ou escolha entre opções), nunca aberta.
   3. Só pergunte o que o agente NÃO consegue descobrir sozinho testando o ambiente.
      Se dá para medir com um comando, é passo do PLAN.md, não pergunta.
-  4. Toda pergunta tem DONO, PRAZO e PADRÃO.
+  4. Toda pergunta tem MOTIVO, DONO, PRAZO e PADRÃO.
+
+MOTIVO É OBRIGATÓRIO
+  A coluna "Por que (impacto)" explica em uma frase o que muda no trabalho por causa da
+  resposta. Pergunta sem motivo declarado deve ser apagada — quem lê não tem como julgar
+  se vale responder. O nível (P0/P1/P2) diz QUANTO importa; o motivo diz POR QUE importa.
+  Um não substitui o outro.
 
 APAGUE TODO ESTE BLOCO AO PREENCHER.
 -->
@@ -53,9 +59,9 @@ APAGUE TODO ESTE BLOCO AO PREENCHER.
 
 ## Perguntas
 
-| ID | Nível | Pergunta | Para quem | Padrão se não responder | Bloqueia | Prazo | Status | Resposta |
-|----|-------|----------|-----------|--------------------------|----------|-------|--------|----------|
-| Q1 | P0 |  |  | — (não executa) |  |  | OPEN |  |
+| ID | Nível | Pergunta | Por que (impacto) | Para quem | Padrão se não responder | Bloqueia | Prazo | Status | Resposta |
+|----|-------|----------|-------------------|-----------|--------------------------|----------|-------|--------|----------|
+| Q1 | P0 |  |  |  | — (não executa) |  |  | OPEN |  |
 
 ## Respondidas (histórico)
 
