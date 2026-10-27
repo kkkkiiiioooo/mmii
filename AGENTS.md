@@ -4,7 +4,6 @@
 Restaurar o Windows com disco C: formatado, sem cabos, pendrive ou adaptadores.
 
 ## 2. Contexto
-- Hardware: Atom (tablet/2 em 1).
 - Sistema: Windows 10 1809 com WinRE funcional.
 - Problema 1: WinRE sem driver Wi-Fi completo, causando erro 10 no adaptador.
 - Problema 2: driver Bluetooth carrega, mas não há utilitário para usá-lo.
