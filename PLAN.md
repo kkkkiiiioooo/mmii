@@ -49,7 +49,9 @@ Inventariar também `resetconfig.xml`, `ReAgent.xml` e pastas `Sources`, `Recove
 ### 0.5 Procurar drivers OEM sobreviventes
 ```bat
 for %d in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do @if exist %d:\Windows\System32\DriverStore dir /s /b %d:\Windows\System32\DriverStore\FileRepository\*.inf 2>nul | findstr /i "netwlan wlan iwlwifi iwlw rtwlane rtl8 bcmwl bcmonly athw qcamain"
-for %d in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do @if exist %d:\ del /q nul & dir /s /b %d:\*.inf 2>nul | findstr /i "wlan wifi wireless net"
+for %d in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do @if exist %d:\Recovery dir /s /b %d:\Recovery\*.inf 2>nul
+for %d in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do @if exist %d:\OEM dir /s /b %d:\OEM\*.inf 2>nul
+for %d in (C D E F G H I J K L M N O P Q R S T U V W Y Z) do @if exist %d:\Drivers dir /s /b %d:\Drivers\*.inf 2>nul
 ```
 Se nada for encontrado, **A1 está bloqueado por falta de insumo**.
 
@@ -87,9 +89,12 @@ Registrar o **Hardware ID** do adaptador Wi-Fi (ex.: `PCI\VEN_...` ou `SDIO\...`
    ```bat
    dism /Get-WimInfo /WimFile:W:\Sources\install.wim
    ```
-2. Validar a imagem:
+2. Validar a imagem montando-a somente para leitura:
    ```bat
-   dism /Cleanup-Image /CheckHealth /ImageFile:W:\Sources\install.wim
+   mkdir X:\mountcheck
+   dism /Mount-Image /ImageFile:W:\Sources\install.wim /Index:1 /MountDir:X:\mountcheck /ReadOnly
+   dism /Image:X:\mountcheck /Cleanup-Image /CheckHealth
+   dism /Unmount-Image /MountDir:X:\mountcheck /Discard
    ```
 3. Formatar/limpar C: (somente se necessário e após confirmar que C: é a partição correta):
    ```bat
@@ -112,10 +117,10 @@ Registrar o **Hardware ID** do adaptador Wi-Fi (ex.: `PCI\VEN_...` ou `SDIO\...`
    bcdboot C:\Windows /s S: /f UEFI /l pt-BR
    ```
    Em Legacy/BIOS: `bcdboot C:\Windows /s S: /f BIOS`.
-7. Ajustar a ordem de boot, se necessário:
+7. Ajustar a ordem de boot, se necessário (substituir o GUID abaixo pelo identificador do Windows Boot Manager exibido em `bcdedit /enum firmware`):
    ```bat
    bcdedit /enum firmware
-   bcdedit /set {fwbootmgr} displayorder {bootmgr} /addfirst
+   bcdedit /set {fwbootmgr} displayorder {GUID-DO-WINDOWS-BOOT-MANAGER} /addfirst
    ```
 8. `wpeutil reboot` e acompanhar o OOBE.
 

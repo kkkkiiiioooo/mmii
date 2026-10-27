@@ -77,7 +77,7 @@ Nenhum comando foi executado no equipamento até o momento. Todo o conteúdo é 
 - **Alternativas em andamento:** 1 (A4)
 - **Alternativas concluídas:** 0
 - **Dúvidas em aberto:** 4 (OQ003 a OQ006)
-- **Decisões tomadas:** 3 (D001 a D003)
+- **Decisões tomadas:** 5 (D001 a D005)
 
 ---
 
