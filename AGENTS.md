@@ -1,10 +1,10 @@
 # GOAL/CHALLENGE: Recuperar Windows sem conexões físicas
 
 ## 1. Objetivo
-Restaurar o Windows com disco C: formatado, sem cabos, pendrive ou adaptadores.
+Restaurar o Windows com a particao C formatada, sem cabos, pendrive ou adaptadores.
 
 ## 2. Contexto
-- Sistema: Windows 10 1809 com WinRE funcional.
+- Sistema: Windows 10 1809 com WinRE funcional na particao que possui a imagem WRE.wim.
 - Problema 1: WinRE sem driver Wi-Fi completo, causando erro 10 no adaptador.
 - Problema 2: driver Bluetooth carrega, mas não há utilitário para usá-lo.
 - Acesso: terminal (cmd) disponível no WinRE, pois inicia automaticamente.
