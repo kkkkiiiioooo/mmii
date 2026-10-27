@@ -33,3 +33,10 @@ Restaurar o sistema operacional Windows em uma partição C: formatada, sem o us
 
 ## 5. Critério de seleção
 Selecionar a alternativa que atenda ao maior número de requisitos (R1 a R5) com o menor nível de risco associado.
+
+---
+
+## 6. Regras para agentes
+- **Responder sempre em português:** Todas as respostas, análises e comunicações devem ser feitas exclusivamente em português brasileiro.
+- **Padronização técnica:** Utilizar linguagem técnica clara e objetiva, seguindo os padrões de documentação de engenharia.
+- **Commits imediatos:** Qualquer alteração nos arquivos do repositório deve ser cometada e enviada para o remoto imediatamente após a modificação.
