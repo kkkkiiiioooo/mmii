@@ -13,6 +13,8 @@ novo do Vibe/GLM acontece AQUI.
 | Arquivo | Proposito |
 |---------|-----------|
 | AGENTS.md | Copia do desafio (somente leitura) |
+| plans/PLAN-MAIN.md | Plano principal consolidado (editado continuamente) |
+| plans/PLAN-EXECUCAO.md | Roteiro executavel das Fases 0-3 |
 | plans/PLAN-001.md | Plano de analise inicial |
 | plans/PLAN-002.md | Roteiro executavel das Fases 0-3 |
 | DECISIONS.md | Decisoes tecnicas (D001-D007) |
