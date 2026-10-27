@@ -24,6 +24,14 @@ write_once() {
   } > "${FILE}.tmp"
   mv -- "${FILE}.tmp" "$FILE"
   printf '[%s] date.txt renovado\n' "$ts"
+
+  # WW_AUTOPUSH=1 -> commita e empurra o heartbeat na branch atual (aacc por padrão).
+  if [[ "${WW_AUTOPUSH:-0}" == "1" ]] && git -C "$ROOT" rev-parse --git-dir >/dev/null 2>&1; then
+    git -C "$ROOT" add date.txt
+    git -C "$ROOT" commit -q -m "chore(heartbeat): date.txt -> ${ts}" || true
+    git -C "$ROOT" push -q origin "HEAD:$(git -C "$ROOT" rev-parse --abbrev-ref HEAD)" || \
+      printf 'aviso: push do heartbeat falhou (sem rede/credencial)\n' >&2
+  fi
 }
 
 status() {

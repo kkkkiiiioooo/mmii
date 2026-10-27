@@ -69,9 +69,16 @@ Tipos: `plan`, `ask`, `feat`, `fix`, `docs`, `chore`.
 o mesmo horário do dia anterior e o atraso acumulado é visível).
 
 ```bash
-./scripts/update-date.sh          # renova uma vez
-./scripts/update-date.sh loop     # renova a cada 23h (processo persistente)
+./scripts/update-date.sh status    # idade do heartbeat em horas (falha se >= 23h)
+./scripts/update-date.sh           # renova uma vez
+./scripts/update-date.sh loop      # renova a cada 23h (processo persistente)
+
+WW_AUTOPUSH=1 ./scripts/update-date.sh loop   # além de renovar, commita e empurra
+                                             # o heartbeat na branch atual
 ```
+
+O heartbeat só vale como evidência se estiver no remoto: rode com `WW_AUTOPUSH=1` (ou faça
+o commit manual) quando `date.txt` precisar provar atividade para outra pessoa.
 
 Formato do arquivo:
 
