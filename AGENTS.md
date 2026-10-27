@@ -60,25 +60,11 @@ So finalize quando ocorrer um destes casos:
 
 ## Navegacao por pastas de agentes
 - A raiz deve continuar simples e previsivel.
-- Cada agente deve criar e trabalhar dentro da sua propria pasta `agentes/NOME_DO_AGENTE/`.
-- NUNCA assuma que uma pasta existente em agentes/ e sua so porque o nome do modelo coincide.
-- A identificacao do modelo pode falhar, e varios agentes podem compartilhar o mesmo modelo.
-- Ao comecar o trabalho, cada agente DEVE criar a sua propria pasta: agentes/SEU_NOME_DE_AGENTE/, copiando o conteudo de base/.
-- Se ja existir uma pasta com o nome do seu modelo e nao houver certeza de que foi criada por voce, crie uma pasta NOVA com sufixo unico (ex.: agentes/glm-2/ ou agentes/vibe-glm/) em vez de editar a pasta alheia.
-- Registre no README.md da sua pasta: quem e voce (nome do agente e modelo), data de criacao e o que editou.
-- Exemplo historico: a pasta agentes/deepseek/ pertence ao agente deepseek; a pasta agentes/glm/ foi usada pelo agente GLM (Vibe).
+- Cada agente deve criar, ler e editar somente a propria pasta `agentes/NOME_DO_AGENTE/`.
+- Nao leia, reutilize ou altere outras pastas em `agentes/`, salvo instrucao explicita do usuario.
+- Se houver duvida sobre qual pasta pertence a voce, pare e solicite confirmacao do usuario.
+- Registre no `README.md` da propria pasta: nome do agente, organizacao, modelo, data de criacao e historico curto de edicoes.
 - A pasta `base/` deve permanecer como referencia principal para novas copias.
-
-## Identificacao obrigatoria do agente
-- Ao comecar o trabalho, o agente DEVE registrar na propria pasta, no README.md, as tres informacoes:
-  - **Nome do agente** (ex.: Vibe, Claude, ChatGPT)
-  - **Organizacao** que mantem o agente (ex.: Mistral AI, Anthropic, OpenAI)
-  - **Modelo** que o alimenta (ex.: GLM, GPT-5, Claude Sonnet)
-- Formato sugerido no README da pasta: `Agente: Vibe | Organizacao: Mistral AI | Modelo: GLM`.
-- Nao confie apenas no nome da pasta para saber quem e o dono: leia o README da pasta e procure pela sua tripla (agente + organizacao + modelo).
-- **Regra de continuidade (anti-duplicacao):** se ja existir pasta cujo README registre exatamente a sua tripla, CONTINUE nessa pasta. Crie pasta nova somente se nenhuma pasta corresponder a sua identidade completa. Isso evita que um novo bate-papo gere pastas duplicadas do mesmo agente.
-- Registre tambem a data de criacao e um historico curto de edicoes no README da pasta.
-
 ## Autonomia real: ambiente de testes e evidencias
 - Nao entregue apenas analise estatica ou planos. Prepare um ambiente de testes proprio e execute.
 - Recomenda-se fortemente montar uma VM com Windows 10 1809 o mais fiel possivel ao cenario (ex.: QEMU/KVM com imagem de teste do Windows 10 1809 e particoes WinRE), reproduzindo: formatar C:, bootar no WinRE com cmd e validar cada comando do plano (dism, bcdboot, pnputil, drvload).
