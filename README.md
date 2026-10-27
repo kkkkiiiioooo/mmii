@@ -109,3 +109,17 @@ o commit manual) quando `date.txt` precisar provar atividade para outra pessoa.
 - Não é lugar de resposta provisória "para depois" — provisório é `TBD` no `PLAN.md` com a
   pergunta correspondente no `OPEN_QUESTIONS.md`.
 - Não é depósito de arquivo solto: todo arquivo novo aparece na tabela da seção 2 ou no `PLAN.md`.
+
+**Token metrics — main (cl100k_base)**
+
+- AGENTS.md: 1877
+- DECISIONS.md: 574
+- GOAL.md: 570
+- OPEN_QUESTIONS.md: 1013
+- PLAN.md: 723
+- README.md: 1609
+- STATE.md: 530
+- date.txt: 26
+- scripts/update-date.sh: 649
+
+Total: 7571
