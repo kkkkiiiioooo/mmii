@@ -1,32 +1,35 @@
-# GOAL/CHALLENGE: Recuperar Windows sem conexões físicas
+# DESAFIO: Recuperação do Windows sem conexões físicas
 
 ## 1. Objetivo
-Restaurar o Windows com a particao C formatada, sem cabos, pendrive ou adaptadores.
+Restaurar o sistema operacional Windows em uma partição C: formatada, sem o uso de cabos, pendrives ou adaptadores físicos.
 
 ## 2. Contexto
-- Sistema: Windows 10 1809 com WinRE funcional na particao que possui a imagem WRE.wim.
-- Problema 1: WinRE sem driver Wi-Fi completo, causando erro 10 no adaptador.
-- Problema 2: driver Bluetooth carrega, mas não há utilitário para usá-lo.
-- Acesso: terminal (cmd) disponível no WinRE, pois inicia automaticamente.
-- Restrição: nenhuma conexão física.
+- **Sistema operacional:** Windows 10 1809
+- **Ambiente de recuperação:** WinRE (Windows Recovery Environment) funcional, contendo a imagem WRE.wim na partição de recuperação
+- **Problema 1:** WinRE não possui driver Wi-Fi completo, resultando em erro 10 (dispositivo não pode ser iniciado) no adaptador de rede sem fio
+- **Problema 2:** Driver Bluetooth é carregado pelo sistema, porém não há utilitário disponível para sua configuração e uso
+- **Acesso disponível:** Terminal (cmd) acessível no WinRE, iniciado automaticamente durante o boot
+- **Restrição crítica:** Ausência total de conexões físicas (cabos, adaptadores, dispositivos de armazenamento externo)
 
 ## 3. Requisitos
+
 | ID | Requisito | Critério de sucesso | Prioridade |
 |----|-----------|---------------------|------------|
-| R1 | Obter rede dentro do WinRE | Adaptador sem erro 10 e IP válido | Alta |
-| R2 | Obter driver Wi-Fi compatível | Driver instalado e funcionando | Alta |
-| R3 | Reinstalar Windows sem pendrive | Boot até a tela inicial | Alta |
-| R4 | Usar Bluetooth como rede (PAN) | Conexão com celular ou PC | Média |
-| R5 | Manter drivers após reinstalação | Wi-Fi ativo após primeiro boot | Média |
+| R1 | Estabelecer conectividade de rede dentro do WinRE | Adaptador de rede sem erro 10 e endereço IP válido atribuído | Alta |
+| R2 | Obter driver Wi-Fi compatível | Driver corretamente instalado e operacional | Alta |
+| R3 | Reinstalar Windows sem mídia física | Sistema bootando até a tela inicial de configuração | Alta |
+| R4 | Utilizar Bluetooth como rede (PAN) | Conexão funcional com celular ou outro PC | Média |
+| R5 | Preservar drivers após reinstalação | Wi-Fi ativo e funcional após o primeiro boot do sistema reinstalado | Média |
 
 ## 4. Alternativas
-| # | Alternativa | Requer | Risco |
-|---|-------------|--------|-------|
-| A1 | Injetar driver Wi-Fi no WinRE via DISM pelo cmd | Arquivo .inf acessível | Médio |
-| A2 | Bluetooth PAN com celular | Celular com tethering BT | Baixo |
-| A3 | Redefinir este PC com download na nuvem | Rede funcional | Baixo |
-| A4 | Restaurar partição de recuperação | Partição intacta | Baixo |
-| A5 | Reinstalação por rede (PXE/WDS) | Servidor na LAN | Alto |
 
-## 6. Critério final
-Escolher a alternativa que cumpra o maior número de R1 a R5 com menor risco.
+| # | Alternativa | Requisitos | Nível de risco |
+|---|-------------|------------|---------------|
+| A1 | Injeção de driver Wi-Fi no WinRE via DISM pelo cmd | Arquivo .inf do driver acessível | Médio |
+| A2 | Conexão Bluetooth PAN com celular | Dispositivo móvel com suporte a tethering via Bluetooth | Baixo |
+| A3 | Redefinição do PC com download na nuvem | Conexão de rede funcional | Baixo |
+| A4 | Restauração a partir da partição de recuperação | Partição de recuperação intacta e acessível | Baixo |
+| A5 | Reinstalação por rede (PXE/WDS) | Servidor PXE/WDS disponível na LAN | Alto |
+
+## 5. Critério de seleção
+Selecionar a alternativa que atenda ao maior número de requisitos (R1 a R5) com o menor nível de risco associado.
