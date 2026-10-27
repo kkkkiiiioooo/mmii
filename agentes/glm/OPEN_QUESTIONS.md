@@ -7,6 +7,3 @@
 | OQ003 | 2026-10-27 | Qual é a **marca/modelo do adaptador Wi-Fi e do Bluetooth** (ex.: Intel AX200, Realtek 8822CE, Qualcomm)? | Permite saber se o `.sys` correto já existe dentro do driver store do WinRE (upgrade do .inf local na Fase 2, item 9c) ou se é necessário obter o INF externamente. | Médio para R1/R2 | Dono do desafio |
 | OQ004 | 2026-10-27 | O destino C: formatado permanece uma partição com letra atribuída no diskpart e existe partição **EFI (ESP) intacta**? | Define se `bcdboot` pode reapontar o boot sem recriar o ESP, e se a troca de NM/thread de boot precisa de `fixboot`/`bootrec`. | Médio para R3 | Dono do desafio |
 | OQ005 | 2026-10-27 | O `data.txt` está vazio de propósito — deve ser usado como log cru do inventário do WinRE (Fase 0)? | Alinha o formato de registro entre os agentes. | Baixo | Dono do desafio / outros agentes |
-
-## Notas de autossuficiência (2026-10-27)
-- OQ001 e OQ003 podem ser respondidas de forma autônoma na Fase 0 (PLAN-002): `dism /Get-WimInfo` revela o tipo do WIM; `pnputil /enum-drivers` e `netcfg -s -n` revelam os adaptadores e drivers presentes no WinRE. O dono só precisa confirmar os casos em que a saída for inconclusiva.
