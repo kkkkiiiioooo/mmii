@@ -1,4 +1,4 @@
-# GOAL: Recuperar dispositivo sem conexões físicas
+# GOAL/CHALLENGE: Recuperar dispositivo sem conexões físicas
 
 ## 1. Objetivo
 Restaurar o Windows em um dispositivo com disco C: formatado, sem cabos, pendrive ou adaptadores.
