@@ -1,7 +1,7 @@
-# GOAL/CHALLENGE: Recuperar dispositivo sem conexões físicas
+# GOAL/CHALLENGE: Recuperar Windows sem conexões físicas
 
 ## 1. Objetivo
-Restaurar o Windows em um dispositivo com disco C: formatado, sem cabos, pendrive ou adaptadores.
+Restaurar o Windows em um Windows com disco C: formatado, sem cabos, pendrive ou adaptadores.
 
 ## 2. Contexto
 - Hardware: Atom (tablet/2 em 1).
