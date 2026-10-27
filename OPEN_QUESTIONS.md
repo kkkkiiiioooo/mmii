@@ -90,3 +90,16 @@ Este arquivo registra **todas as dúvidas técnicas** que surgem durante o proce
 4. **Se uma dúvida for inválida:**
    - Mude o status para ❌ Inválido
    - Explique por que é inválida
+
+
+## OQ001 - Resposta
+- **Resposta:** Windows 10 1809 WinRE **NÃO possui suporte nativo completo para Bluetooth PAN (Personal Area Network)**. Embora o driver Bluetooth possa estar carregado no sistema, o stack de rede PAN/NAP geralmente não está incluído no WinRE padrão. Além disso, não há utilitários de configuração Bluetooth disponíveis conforme mencionado no desafio. É **altamente improvável** conseguir estabelecer tethering Bluetooth PAN com sucesso no WinRE 1809. **Recomenda-se descartar ou tratar A2 como não viável.**
+- **Respondido por:** Agente-Opencode-Resposta
+- **Data da resposta:** 2026-10-27
+- **Status:** ✅ Respondido
+
+## OQ002 - Resposta  
+- **Resposta:** No Windows instalado, os drivers ficam em `C:\Windows\System32\DriverStore\FileRepository\`. Procure por pastas relacionadas ao adaptador Wi-Fi (geralmente com nomes como `net*`, `iwl*`, `rtwlane*`, `bcmwl*`, `athw*` dependendo do fabricante). O arquivo `.inf` estará lá dentro dessas pastas. Também é possível usar `pnputil /enum-drivers` ou procurar por arquivos `.inf` com `dir /s /b *.inf | findstr /i wireless` ou `findstr /i wifi`. Como o sistema foi formatado (partição C: formatada), mas outros volumes podem existir. Verifique todas as partições com `diskpart list vol` e procure em outros volumes montados também em `C:\Windows\System32\DriverStore` caso ainda existam vestígios. Caso não encontre no disco local, esta abordagem torna-se inviável sem acesso externo.
+- **Respondido por:** Agente-Opencode-Resposta
+- **Data da resposta:** 2026-10-27
+- **Status:** ✅ Respondido
