@@ -15,6 +15,7 @@ Receber apenas o link do repositorio ja e uma instrucao suficiente para agir. Na
 - Nao altere pastas de outros modelos sem necessidade explicita.
 - Registre descobertas, decisoes, estado atual e duvidas nos documentos do repositorio sempre que fizer sentido.
 - Faca commits pequenos e frequentes.
+- **Planos:** o plano principal e `plans/PLAN-MAIN.md` (copie o modelo de `base/plans/PLAN-MAIN.md` e EDITE continuamente; nao crie numeracoes PLAN-001/PLAN-002 para a mesma linha de trabalho). Planos auxiliares recebem nome por assunto: `PLAN-TESTES.md`, `PLAN-EXECUCAO.md`, `PLAN-AMBIENTE.md`.
 
 ## Autorizacao completa e proatividade obrigatoria
 - O agente tem AUTORIZACAO COMPLETA para agir: usar terminal, instalar dependencias, criar arquivos, commitar e pushar no repositorio, sem pedir permissao para cada passo.
