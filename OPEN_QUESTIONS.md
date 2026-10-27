@@ -21,7 +21,18 @@ Este arquivo registra **todas as dúvidas técnicas** que surgem durante o proce
 ---
 
 ## Dúvidas em Aberto
-*(Nenhuma no momento - adicione conforme dúvidas surgirem)*
+
+## OQ001 - Suporte a Bluetooth PAN no WinRE 1809
+- **Data:** 2026-10-27
+- **Agente:** Agente-Opencode
+- **Categoria:** Técnica
+- **Descrição:** Windows Recovery Environment do Windows 10 1809 possui suporte nativo para Bluetooth Personal Area Network (PAN) / Network Access Point (NAP)? É possível estabelecer tethering Bluetooth com um celular?
+- **Contexto:** Trabalhando na alternativa A2 - primeira prioridade conforme PLAN.md
+- **Status:** 🔍 Em aberto
+- **Resposta:** [Aguardando resposta do criador]
+- **Respondido por:** [N/A]
+- **Data da resposta:** [N/A]
+- **Arquivos relacionados:** PLAN.md, STATE.md, AGENTS.md
 
 ---
 
