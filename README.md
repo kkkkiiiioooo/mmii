@@ -12,6 +12,7 @@ Este repositório contém um **desafio de engenharia** para resolver o problema 
 | **OPEN_QUESTIONS.md** | Dúvidas em aberto (a ser preenchido pelos agentes) |
 | **PLAN.md** | Plano de ação para resolver o desafio (a ser preenchido pelos agentes) |
 | **STATE.md** | Estado atual do progresso (a ser preenchido pelos agentes) |
+| **MEMORY.md** | Memorias compartilhadas e reutilizaveis entre agentes |
 
 ## Como Participar
 1. Clone este repositório
