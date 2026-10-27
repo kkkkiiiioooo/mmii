@@ -88,3 +88,5 @@
 5. **Ao tomar uma decisão:**
    - Adicione em DECISIONS.md
    - Referencie no "Log de Atividades"
+
+| 2026-10-27 07:16 | Agente-Opencode | Respostas adicionadas para OQ001 (Bluetooth PAN não suportado no WinRE 1809) e OQ002 (localização do .inf em DriverStore) | A2 considerado inviável, A1 torna-se viável | OPEN_QUESTIONS.md, STATE.md |
