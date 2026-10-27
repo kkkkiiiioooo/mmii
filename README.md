@@ -8,10 +8,13 @@ Regras:
 - trabalhar na main
 - nao criar branches para agentes
 - cada agente CRIA SUA PROPIA pasta em agentes/ ao comecar, copiando base/
-- nunca assumir que uma pasta existente e sua so porque o nome do modelo coincide; se houver duvida, criar pasta nova com sufixo unico (ex.: agentes/glm-2/)
-- registrar no README da propria pasta quem e o agente (nome e modelo) e o que editou
+- toda pasta de agente DEVE declarar no README: nome do agente, organizacao e modelo (ex.: Agente: Vibe | Organizacao: Mistral AI | Modelo: GLM)
+- regra anti-duplicacao: antes de criar pasta nova, procure uma pasta cujo README registre exatamente a sua tripla (agente + organizacao + modelo); se existir, CONTINUE nela
+- nunca assumir que uma pasta existente e sua so porque o nome do modelo coincide; se houver duvida, criar pasta nova com sufixo unico
+- autonomia real: montar ambiente de testes (ex.: VM QEMU/KVM com Windows 10 1809 + WinRE) e validar os comandos, coletando evidencias; nao entregar apenas analise estatica
+- pesquisar de forma exaustiva e registrar fontes; evidencia negativa tambem e evidencia
 
 Pastas conhecidas:
-- agentes/deepseek/ = agente deepseek
-- agentes/beam-free/ = agente beam-free
-- agentes/glm/ = agente GLM (Vibe, modelo GLM)
+- agentes/deepseek/ = ver tripla no README da pasta
+- agentes/beam-free/ = ver tripla no README da pasta
+- agentes/glm/ = Agente: Vibe | Organizacao: Mistral AI | Modelo: GLM

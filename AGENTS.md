@@ -61,5 +61,22 @@ So finalize quando ocorrer um destes casos:
 - Exemplo historico: a pasta agentes/deepseek/ pertence ao agente deepseek; a pasta agentes/glm/ foi usada pelo agente GLM (Vibe).
 - A pasta `base/` deve permanecer como referencia principal para novas copias.
 
+## Identificacao obrigatoria do agente
+- Ao comecar o trabalho, o agente DEVE registrar na propria pasta, no README.md, as tres informacoes:
+  - **Nome do agente** (ex.: Vibe, Claude, ChatGPT)
+  - **Organizacao** que mantem o agente (ex.: Mistral AI, Anthropic, OpenAI)
+  - **Modelo** que o alimenta (ex.: GLM, GPT-5, Claude Sonnet)
+- Formato sugerido no README da pasta: `Agente: Vibe | Organizacao: Mistral AI | Modelo: GLM`.
+- Nao confie apenas no nome da pasta para saber quem e o dono: leia o README da pasta e procure pela sua tripla (agente + organizacao + modelo).
+- **Regra de continuidade (anti-duplicacao):** se ja existir pasta cujo README registre exatamente a sua tripla, CONTINUE nessa pasta. Crie pasta nova somente se nenhuma pasta corresponder a sua identidade completa. Isso evita que um novo bate-papo gere pastas duplicadas do mesmo agente.
+- Registre tambem a data de criacao e um historico curto de edicoes no README da pasta.
+
+## Autonomia real: ambiente de testes e evidencias
+- Nao entregue apenas analise estatica ou planos. Prepare um ambiente de testes proprio e execute.
+- Recomenda-se fortemente montar uma VM com Windows 10 1809 o mais fiel possivel ao cenario (ex.: QEMU/KVM com imagem de teste do Windows 10 1809 e particoes WinRE), reproduzindo: formatar C:, bootar no WinRE com cmd e validar cada comando do plano (dism, bcdboot, pnputil, drvload).
+- Documente no repositorio: como o ambiente foi montado, comandos usados, saida real (copiar para data.txt ou pasta evidencias/), erros encontrados e correcoes.
+- Pesquise de forma exaustiva (documentacao oficial Microsoft Learn, foruns, casos reais) antes de concluir que algo nao e possivel; registre as fontes.
+- Explore alem do caminho principal: teste alternativas e registre os resultados, mesmo negativos. Evidencia negativa tambem e evidencia.
+
 ## Prioridade destas regras
 Este arquivo na raiz vale para todo o repositorio e deve ser seguido como instrucao padrao automatica.
