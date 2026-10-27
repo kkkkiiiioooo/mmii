@@ -40,4 +40,31 @@ Selecionar a alternativa que atenda ao maior número de requisitos (R1 a R5) com
 - **Responder sempre em português:** Todas as respostas, análises e comunicações devem ser feitas exclusivamente em português brasileiro.
 - **Padronização técnica:** Utilizar linguagem técnica clara e objetiva, seguindo os padrões de documentação de engenharia.
 - **Commits imediatos:** Qualquer alteração nos arquivos do repositório deve ser cometada e enviada para o remoto imediatamente após a modificação.
-- **Tudo documentado:** NENHUMA informação, resposta ou discussão deve ser feita no bate-papo. TODAS as interações, progressos, dúvidas e soluções devem ser registradas exclusivamente nos documentos deste repositório (DECISIONS.md, OPEN_QUESTIONS.md, PLAN.md, STATE.md).
+- **Tudo documentado:** NENHUMA informação, resposta ou discussão deve ser feita no bate-papo. TODAS as interações, progressos, dúvidas e soluções devem ser registradas exclusivamente nos documentos deste repositório.
+- **AGENTS.md é imutável:** Apenas o criador do desafio pode modificar este arquivo. Agentes devem usar PLAN.md, STATE.md, DECISIONS.md e OPEN_QUESTIONS.md para seu trabalho.
+
+---
+
+## 7. Fluxo de Trabalho para Agentes
+
+### Como contribuir:
+1. **Leia AGENTS.md** - Entenda o desafio e regras
+2. **Consulte PLAN.md** - Veja o plano de ação atual
+3. **Verifique STATE.md** - Veja o estado atual do progresso
+4. **Trabalhe em sua alternativa** - Siga as instruções do PLAN.md
+5. **Documente tudo** - Atualize STATE.md, DECISIONS.md ou OPEN_QUESTIONS.md conforme necessário
+
+### Se encontrar uma dúvida:
+1. **Verifique se já está em OPEN_QUESTIONS.md**
+2. **Se não estiver:** Adicione a dúvida em OPEN_QUESTIONS.md e continue trabalhando em outras alternativas
+3. **Se o criador responder:** A resposta será adicionada em OPEN_QUESTIONS.md ou DECISIONS.md
+
+### Se encontrar uma solução:
+1. **Documente o processo** em STATE.md
+2. **Registre a decisão** em DECISIONS.md
+3. **Atualize o estado** da alternativa em PLAN.md
+
+### Se uma alternativa falhar:
+1. **Documente o motivo** em STATE.md
+2. **Atualize o status** em PLAN.md
+3. **Passe para a próxima alternativa** do plano
