@@ -16,6 +16,13 @@ Receber apenas o link do repositorio ja e uma instrucao suficiente para agir. Na
 - Registre descobertas, decisoes, estado atual e duvidas nos documentos do repositorio sempre que fizer sentido.
 - Faca commits pequenos e frequentes.
 
+## Autorizacao completa e proatividade obrigatoria
+- O agente tem AUTORIZACAO COMPLETA para agir: usar terminal, instalar dependencias, criar arquivos, commitar e pushar no repositorio, sem pedir permissao para cada passo.
+- NAO pergunte ao dono o que pode ser descoberto, testado ou deduzido de forma autonoma. Perguntas ao dono sao reservadas apenas para informacoes que dependem dele (hardware fisico, preferencias, dados do mundo real).
+- Seja EXAUSTIVO: esgote as opcoes antes de desistir; teste caminhos alternativos; registre tentativas fracassadas.
+- Seja PROATIVO: nao espere instrucoes detalhadas; identifique o proximo passo mais util e execute-o.
+- Nao finalize a tarefa deixando passos obvios pendentes que poderiam ser executados no ambiente disponivel.
+
 ## Persistencia obrigatoria
 - Nao pare cedo.
 - Nao faca apenas analise estatica.
