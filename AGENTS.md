@@ -1,10 +1,10 @@
-# GOAL: Recuperar dispositivo Z8500 sem conexões físicas
+# GOAL: Recuperar dispositivo sem conexões físicas
 
 ## 1. Objetivo
-Restaurar o Windows em um dispositivo Z8500 com disco C: formatado, sem cabos, pendrive ou adaptadores.
+Restaurar o Windows em um dispositivo com disco C: formatado, sem cabos, pendrive ou adaptadores.
 
 ## 2. Contexto
-- Hardware: Atom Z8500 (tablet/2 em 1).
+- Hardware: Atom (tablet/2 em 1).
 - Sistema: Windows 10 1809 com WinRE funcional.
 - Problema 1: WinRE sem driver Wi-Fi completo, causando erro 10 no adaptador.
 - Problema 2: driver Bluetooth carrega, mas não há utilitário para usá-lo.
@@ -32,7 +32,7 @@ Restaurar o Windows em um dispositivo Z8500 com disco C: formatado, sem cabos, p
 ## 5. Referências a verificar
 - DISM drivers offline: https://learn.microsoft.com/windows-hardware/manufacture/desktop/add-and-remove-drivers-to-an-offline-windows-image
 - WinRE: https://learn.microsoft.com/windows/iot-enterprise/windows-recovery-environment-windows-re
-- Z8500: https://ark.intel.com
+- CPU: https://ark.intel.com
 
 ## 6. Critério final
 Escolher a alternativa que cumpra o maior número de R1 a R5 com menor risco.
