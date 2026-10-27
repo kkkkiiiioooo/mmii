@@ -34,6 +34,18 @@ Este arquivo registra **todas as dúvidas técnicas** que surgem durante o proce
 - **Data da resposta:** [N/A]
 - **Arquivos relacionados:** PLAN.md, STATE.md, AGENTS.md
 
+## OQ002 - Arquivo .inf do driver Wi-Fi para A1
+- **Data:** 2026-10-27
+- **Agente:** Agente-Opencode
+- **Categoria:** Técnica
+- **Descrição:** Onde localizar o arquivo .inf do driver Wi-Fi compatível com o adaptador Wi-Fi (atualmente com erro 10 no WinRE)? O driver precisa estar acessível sem conexões físicas/externas - onde pode estar armazenado no sistema?
+- **Contexto:** Preparando para alternativa A1 caso A2 falhe
+- **Status:** 🔍 Em aberto
+- **Resposta:** [Aguardando resposta do criador]
+- **Respondido por:** [N/A]
+- **Data da resposta:** [N/A]
+- **Arquivos relacionados:** PLAN.md, AGENTS.md, CONFIG.md
+
 ---
 
 ## Dúvidas Respondidas
