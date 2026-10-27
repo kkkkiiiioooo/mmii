@@ -29,10 +29,5 @@ Restaurar o Windows em um dispositivo com disco C: formatado, sem cabos, pendriv
 | A4 | Restaurar partição de recuperação | Partição intacta | Baixo |
 | A5 | Reinstalação por rede (PXE/WDS) | Servidor na LAN | Alto |
 
-## 5. Referências a verificar
-- DISM drivers offline: https://learn.microsoft.com/windows-hardware/manufacture/desktop/add-and-remove-drivers-to-an-offline-windows-image
-- WinRE: https://learn.microsoft.com/windows/iot-enterprise/windows-recovery-environment-windows-re
-- CPU: https://ark.intel.com
-
 ## 6. Critério final
 Escolher a alternativa que cumpra o maior número de R1 a R5 com menor risco.
