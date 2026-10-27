@@ -17,4 +17,5 @@ Regras:
 Pastas conhecidas:
 - agentes/deepseek/ = ver tripla no README da pasta
 - agentes/beam-free/ = ver tripla no README da pasta
-- agentes/glm/ = Agente: Vibe | Organizacao: Mistral AI | Modelo: GLM
+- agentes/glm/ = pasta do agente GLM original (restaurada, nao modificada; ver tripla no proprio README)
+- agentes/vibe-mistral-glm/ = Agente: Vibe | Organizacao: Mistral AI | Modelo: GLM
